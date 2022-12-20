@@ -9,13 +9,16 @@
 </head>
 <body class="text-bg-dark">
    <div class="container text-center my-3">
-      <h1 class="mb-3">Inserisci il messaggio da controllare: </h1>
       <form action="messageToCheck.php" method="POST">
-      <div class="input-group">
-         <textarea class="form-control" name="message" cols="30" rows="5" placeholder="La parola 'ciao' all'interno del messaggio verrà censurata..."></textarea>
-         <button class="btn btn-primary" type="submit">Check</button>
-      </div>
-   </form>
+         <h1 class="mb-3">Inserisci la parola da censurare</h1>
+         <input class="form-control mb-3" type="text" name="word" placeholder="Inserisci la parola che vuoi censurare"></input>
+
+         <h1 class="mb-3">Inserisci il messaggio da controllare: </h1>
+         <div class="input-group">
+            <textarea class="form-control" name="message" cols="30" rows="5" placeholder="La parola scritta sopra verrà censurata all'interno del messaggio..."></textarea>
+            <button class="btn btn-primary" type="submit">Check</button>
+         </div>
+      </form>
    </div>
 </body>
 </html>

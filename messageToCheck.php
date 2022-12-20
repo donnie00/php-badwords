@@ -1,7 +1,10 @@
 <?php
-$message = $_POST['message'];
+var_dump($_POST);
 
-$messageCensored = str_replace('ciao', '***', $message);
+$message = $_POST['message'];
+$word = $_POST['word'];
+
+$messageCensored = str_replace($word, '***', $message);
 
 ?>
 
